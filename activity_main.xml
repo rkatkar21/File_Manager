@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="26dp"
+        android:layout_above="@id/viewstoragebutton"
+        android:layout_marginBottom="57dp"
+        android:text="Android File Manager"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/viewstoragebutton"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_200"
+        android:padding="8dp"
+        android:text="View Storage"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <EditText
+        android:id="@+id/devbyrohan"
+        android:layout_width="257dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Developed by Rohan Katkar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="802dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/viewstoragebutton"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="107dp"
+        app:srcCompat="@drawable/androidlogo"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/copyanddelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewstoragebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="File copier and deleter" />
+
+    <ImageView
+        android:id="@+id/copyfileicon"
+        android:layout_width="123dp"
+        android:layout_height="105dp"
+        android:layout_below="@id/viewstoragebutton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="39dp"
+        app:srcCompat="@drawable/baseline_file_copy_24" />
+
+    <ImageView
+        android:id="@+id/deletefileicon"
+        android:layout_width="123dp"
+        android:layout_height="105dp"
+        android:layout_below="@id/viewstoragebutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="39dp"
+        app:srcCompat="@drawable/baseline_delete_24" />
+
+
+</RelativeLayout>
